@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background: #022134;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #1d7ce8 3px solid;
+}
+
+header a {/*字大小*/
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    padding: 0 100px 0 100px;
+}
+
+header li:hover {
+    background: #57636e;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#home {
+    /* 添加背景图片 */
+    background-image: url('tupian/hailang.webp'); 
+    background-size: cover; /* 使背景图片覆盖整个区域 */
+    background-position: center; /* 将背景图片居中 */
+    text-align: center;
+    padding: 250px 20px; /* 调整内边距以适应背景图片 */
+    color: #fff;
+  
+}
+
+
+#home h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+h2 {
+    margin-top: 0;
+    color: #35424a;
+}
+
+/* 重置基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 1200px; 
+    margin: 20px auto; /* 上下20px，左右自动，实现居中 */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+.video-container {
+    position: relative;
+    padding-bottom: 40%;
+    padding-top: 30px;
+    height: 0;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/* 容器样式 */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 服务区块样式 */
+.service-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); /* 每个区块占据一行中的三分之一宽度，减去间隙 */
+    min-width: 300px; /* 确保在小屏幕上也能有良好的显示效果 */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 标题样式 */
+.service-section h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #28a745;
+    text-transform: uppercase; /* 使标题更加醒目 */
+    letter-spacing: 1px; /* 增加字母间距，提高可读性 */
+}
+
+/* 段落样式 */
+.service-section p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .service-section {
+        flex: 1 1 calc(50% - 20px); /* 在中等屏幕上，每个区块占据一行中的一半宽度 */
+    }
+}
+
+@media (max-width: 576px) {
+    .service-section {
+        flex: 1 1 100%; /* 在小屏幕上，每个区块占据整行宽度 */
+    }
+}
+
+/* 可选：添加一些额外的装饰，如分隔线 */
+.container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e3e6f0;
+    margin-top: 40px; /* 在容器底部添加一条细线作为分隔 */
+}
+
+
+footer {
+    background: #022134;
+    color: #fff;
+    text-align: center;
+    padding:15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
